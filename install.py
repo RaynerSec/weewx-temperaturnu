@@ -1,25 +1,24 @@
-# installer for windy
-# Copyright 2019-2020 Matthew Wall
+# installer for temperatur.nu
+# Copyright 2026 Based on weewx-windy by Matthew Wall
 # Distributed under the terms of the GNU Public License (GPLv3)
 
 from weecfg.extension import ExtensionInstaller
 
 def loader():
-    return WindyInstaller()
+    return TemperaturNuInstaller()
 
-class WindyInstaller(ExtensionInstaller):
+class TemperaturNuInstaller(ExtensionInstaller):
     def __init__(self):
-        super(WindyInstaller, self).__init__(
-            version="0.8",
-            name='windy',
-            description='Upload weather data to Windy.',
-            author="Matthew Wall",
-            author_email="mwall@users.sourceforge.net",
-            restful_services='user.windy.Windy',
+        super(TemperaturNuInstaller, self).__init__(
+            version="0.1",
+            name='temperaturnu',
+            description='Upload weather data to Temperatur.nu.',
+            author="RC Chuah (Based on weewx-windy by Matthew Wall)",
+            author_email="44928288+rc-chuah@users.noreply.github.com",
+            restful_services='user.temperaturnu.TemperaturNu',
             config={
                 'StdRESTful': {
-                    'Windy': {
-                        'station_id': 'replace_me',
-                        'station_password': 'replace_me'}}},
-            files=[('bin/user', ['bin/user/windy.py'])]
-            )
+                    'TemperaturNu': {
+                        'apikey': 'replace_me'}}},
+            files=[('bin/user', ['bin/user/temperaturnu.py'])]
+        )
