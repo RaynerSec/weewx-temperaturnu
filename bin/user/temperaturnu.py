@@ -6,6 +6,7 @@ This is a weewx extension that uploads data to temperatur.nu
 https://www.temperatur.nu/
 
 The protocol is described here:
+
 https://www.temperatur.nu/info/rapportera-till-temperatur-nu/
 
 Minimal configuration:
