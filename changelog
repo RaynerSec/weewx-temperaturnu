@@ -1,4 +1,4 @@
-0.1 27mar2026
+0.1 28mar2026
 * Initial release based on weewx-windy template
 * Supports Temperatur.nu API
 * Automatic temperature conversion from Fahrenheit to Celsius
