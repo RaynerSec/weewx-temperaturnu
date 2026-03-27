@@ -215,7 +215,7 @@ class TemperaturNuThread(weewx.restx.RESTThread):
             logerr("Error processing record: %s" % str(e))
 
     def post_request(self, url, record, manager):
-        """Make the HTTP GET request to Temperatur.nu"""
+        """Make the HTTP GET request to Temperatur.nu using only standard library"""
         try:
             # Use urlopen from standard library (no external dependencies)
             response = urlopen(url, timeout=self.timeout)
