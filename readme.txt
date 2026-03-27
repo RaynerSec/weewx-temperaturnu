@@ -83,4 +83,7 @@ Troubleshooting:
 
 5) Ensure your weather station is recording temperature data (outTemp)
 
+6) For connection issues, verify the URL is accessible:
+   curl "https://www.temperatur.nu/rapportera.php?hash=YOUR_KEY&t=20"
+
 Credits - Inspired by weewx-windy: https://github.com/Jterrettaz/weewx-windy
