@@ -13,7 +13,7 @@ class TemperaturNuInstaller(ExtensionInstaller):
             version="0.1",
             name='temperaturnu',
             description='Upload weather data to Temperatur.nu.',
-            author="RC Chuah (Based on weewx-windy by Matthew Wall)",
+            author="RC Chuah (Based on weewx-windy by Matthew Wall and Jacques Terrettaz)",
             author_email="44928288+rc-chuah@users.noreply.github.com",
             restful_services='user.temperaturnu.TemperaturNu',
             config={
