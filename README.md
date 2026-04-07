@@ -88,7 +88,7 @@ The extension performs the following tasks:
 1. **Monitors** archive records from your WeeWX weather station
 2. **Extracts** the outdoor temperature (`outTemp`)
 3. **Converts** temperature to Celsius (if your station uses Fahrenheit or other units)
-4. **Uploads** the temperature data to Temperatur.nu via HTTP POST for each new archive record
+4. **Uploads** the temperature data to Temperatur.nu via HTTP GET for each new archive record
 
 ## Temperature Conversion
 
